@@ -1,11 +1,15 @@
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
+import ChangeLanguage from "./ChangeLanguage";
 
 function Welcome() {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
 
   return (
-    <div>{t("welcomeToReact")}</div>
-  )
+    <>
+      <div>{t("welcomeToReact")}</div>
+      <ChangeLanguage />
+    </>
+  );
 }
 
-export default Welcome
+export default Welcome;
