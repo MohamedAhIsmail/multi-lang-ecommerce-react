@@ -29,18 +29,14 @@ function ChangeLanguage() {
         <button onClick={() => i18n.changeLanguage("en")}>En</button>
       </div>
 
+      {/* <span class="fi fi-gr fis"></span> */}
+
       <select value={lng} onChange={(e) => i18n.changeLanguage(e.target.value)}>
         {languages.map(({ name, flag, code }) => (
           <option value={code} key={code}>
             {name}
           </option>
         ))}
-        {/* <option disabled={lng === "en"} value="en">
-          English
-        </option>
-        <option disabled={lng === "ar"} value="ar">
-          العربية
-        </option> */}
       </select>
     </>
   );
