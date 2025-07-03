@@ -2,6 +2,19 @@ import Cookies from "js-cookie";
 import i18n from "i18next";
 import { useEffect } from "react";
 
+const languages = [
+  {
+    name: "English",
+    flag: "us",
+    code: "en",
+  },
+  {
+    name: "العربية",
+    flag: "sa",
+    code: "ar",
+  },
+];
+
 function ChangeLanguage() {
   const lng = Cookies.get("i18next") || "en";
 
@@ -17,8 +30,17 @@ function ChangeLanguage() {
       </div>
 
       <select value={lng} onChange={(e) => i18n.changeLanguage(e.target.value)}>
-        <option value="en">English</option>
-        <option value="ar">العربية</option>
+        {languages.map(({ name, flag, code }) => (
+          <option value={code} key={code}>
+            {name}
+          </option>
+        ))}
+        {/* <option disabled={lng === "en"} value="en">
+          English
+        </option>
+        <option disabled={lng === "ar"} value="ar">
+          العربية
+        </option> */}
       </select>
     </>
   );
