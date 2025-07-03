@@ -18,12 +18,12 @@ i18n
     fallbackLng: "en",
     detection: {
       order: [
-        "htmlTag",
         "cookie",
         "localStorage",
         "sessionStorage",
-        "navigator",
         "path",
+        "navigator",
+        "htmlTag",
         "subdomain",
       ],
       caches: ["cookie"],

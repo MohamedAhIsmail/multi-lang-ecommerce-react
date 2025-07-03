@@ -10,10 +10,17 @@ function ChangeLanguage() {
   }, [lng]);
 
   return (
-    <div>
-      <button onClick={() => i18n.changeLanguage("ar")}>AR</button>
-      <button onClick={() => i18n.changeLanguage("en")}>En</button>
-    </div>
+    <>
+      <div>
+        <button onClick={() => i18n.changeLanguage("ar")}>AR</button>
+        <button onClick={() => i18n.changeLanguage("en")}>En</button>
+      </div>
+
+      <select value={lng} onChange={(e) => i18n.changeLanguage(e.target.value)}>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </>
   );
 }
 
