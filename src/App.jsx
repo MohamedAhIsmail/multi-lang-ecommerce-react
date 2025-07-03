@@ -1,5 +1,7 @@
+import Welcome from "./components/Welcome";
+
 function App() {
-  return <>Hello</>;
+  return <Welcome />;
 }
 
 export default App;
