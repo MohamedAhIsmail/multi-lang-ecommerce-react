@@ -4,9 +4,12 @@ import "./utils/i18n/i18n.js";
 import App from "./App.jsx";
 import "./index.css";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
+import { DarkModeProvider } from "./context/DarkModeContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <DarkModeProvider>
+      <App />
+    </DarkModeProvider>
   </StrictMode>
 );
