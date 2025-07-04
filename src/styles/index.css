@@ -7,7 +7,7 @@
 
 @layer components {
   .container {
-    @apply mx-auto px-[30px];
+    @apply mx-auto px-[15px];
   }
 }
 :root {
@@ -29,6 +29,7 @@
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
 
+  /* MyStyles */
   --color-background: var(--background);
   --color-border: var(--border);
   --color-text: var(--text);
@@ -45,5 +46,4 @@
 
 body {
   font-family: var(--font-display);
-  background-color: var(--color-background);
 }

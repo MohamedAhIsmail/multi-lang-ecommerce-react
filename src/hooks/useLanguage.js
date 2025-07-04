@@ -1,4 +1,3 @@
-import Cookies from "js-cookie";
 import i18n from "i18next";
 
 import { useEffect, useState } from "react";
