@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 @import "tailwindcss";
 
-@utility btn {
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* @utility btn {
   @apply bg-amber-800 text-2xl px-5 py-3;
-}
+} */
 
 @layer components {
   .container {
@@ -18,6 +20,9 @@
   --color-text-second: #333d4c;
   --color-heading: #181d25;
   --color-icon: #333d4c;
+  --color-button-background: #222934;
+  --color-footer-background: #222934;
+  --box-shadow-dark: 0 8px 30px -4px #080b12;
 }
 
 @theme {
@@ -33,16 +38,29 @@
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
 
   /* MyStyles */
-  --color-background: var(--background);
+  --color-background-main: var(--background);
+  --color-second-background: var(--second-background);
   --color-border: var(--border);
-  --color-text: var(--text);
+  --color-text-main: var(--text-main);
+  --color-text-second: var(--text-second);
+  --color-heading: var(--heading);
+  --color-icon: var(--icon);
+  --color-button-background: var(--button-background);
+  --color-footer-background: var(--footer-background);
+  --box-shadow: 0 8px 30px -4px #080b12;
   /* ... */
 }
 
 .dark {
-  --color-background: #000;
-  --color-border: #fff;
-  --color-text: #fff;
+  --color-background-main: #222934;
+  --color-second-background: #2d343e;
+  --color-border: #333d4c;
+  --color-text-main: #d3d4d6;
+  --color-text-second: #e0e5eb;
+  --color-heading: #ffffff;
+  --color-icon: #e0e5eb;
+  --color-button-background: #ffffff;
+  --box-shadow: 0 8px 30px -4px #676f7b;
 }
 
 body {
