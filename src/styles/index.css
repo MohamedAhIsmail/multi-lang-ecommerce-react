@@ -11,10 +11,13 @@
   }
 }
 :root {
-  --color-background: #fff;
-  --color-border: #000;
-  --color-text: #000;
-  --muted: #7b7b7b;
+  --color-background: #ffffff;
+  --color-second-background: #f5f7fa;
+  --color-border: #e0e5eb;
+  --color-text-main: #181d25;
+  --color-text-second: #333d4c;
+  --color-heading: #181d25;
+  --color-icon: #333d4c;
 }
 
 @theme {
@@ -33,7 +36,6 @@
   --color-background: var(--background);
   --color-border: var(--border);
   --color-text: var(--text);
-  --muted: var(--muted);
   /* ... */
 }
 
@@ -41,7 +43,6 @@
   --color-background: #000;
   --color-border: #fff;
   --color-text: #fff;
-  --muted: #7b7b7b;
 }
 
 body {
