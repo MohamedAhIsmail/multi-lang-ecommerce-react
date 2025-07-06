@@ -1,3 +1,7 @@
 {
-  "welcomeToReact": "Welcome to React and react-i18next"
+  "welcomeToReact": "Welcome to React and react-i18next",
+  "wishlist": "Wishlist",
+  "account": "Account",
+  "contactUs": "Contact us",
+  "sale": "🔥 The Biggest Sale Ever 50% Off"
 }

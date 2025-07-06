@@ -24,10 +24,10 @@ function ChangeLanguage() {
 
   return (
     <>
-      <div>
+      {/* <div>
         <button onClick={() => i18n.changeLanguage("ar")}>AR</button>
         <button onClick={() => i18n.changeLanguage("en")}>En</button>
-      </div>
+      </div> */}
 
       {/* <span class="fi fi-gr fis"></span> */}
 
