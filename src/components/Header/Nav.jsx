@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../hooks/useLanguage";
+import NavMenu from "./NavMenu";
 
 const navLinks = {
   en: [
@@ -27,7 +28,7 @@ function Nav() {
   const links = navLinks[language];
 
   return (
-    <nav>
+    <nav className="hidden md:block">
       <ul className="flex gap-5 items-center">
         {links.map((link) => (
           <li className="text-text-second font-medium" key={link.name}>

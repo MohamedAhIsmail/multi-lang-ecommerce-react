@@ -19,7 +19,7 @@
   --color-app-background: #ffffff;
   --color-background-main: #ffffff;
   --color-background-second: #f6f9fc;
-  --color-border: #e0e5eb;
+  --color-border-color: #e0e5eb;
   --color-text-main: #181d25;
   --color-text-second: #333d4c;
   --color-heading: #181d25;
@@ -44,7 +44,7 @@
   --color-app-background: var(--app-background);
   --color-background-main: var(--background-main);
   --color-background-second: var(--background-second);
-  --color-border: var(--border);
+  --color-border-color: var(--border-color);
   --color-text-main: var(--text-main);
   --color-text-second: var(--text-second);
   --color-heading: var(--heading);
@@ -60,7 +60,7 @@
   --color-app-background: #181d25;
   --color-background-main: #222934;
   --color-background-second: #2d343e;
-  --color-border: #333d4c;
+  --color-border-color: #333d4c;
   --color-text-main: #d3d4d6;
   --color-text-second: #e0e5eb;
   --color-heading: #ffffff;
@@ -70,12 +70,13 @@
 }
 
 * {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 body {
   font-family: var(--font-display);
   background-color: var(--color-app-background);
+  height: 5000px;
 }
 
 .active {
