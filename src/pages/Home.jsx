@@ -1,6 +1,6 @@
 
 function Home() {
-  return <div className="shadow-light bg-amber-200">Home</div>;
+  return <div>Home</div>;
 }
 
 export default Home;
