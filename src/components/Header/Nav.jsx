@@ -8,7 +8,6 @@ const navLinks = {
     { name: "Categories", path: "/categories" },
     { name: "Deals", path: "/deals" },
     { name: "New Arrivals", path: "/new-arrivals" },
-    { name: "Gift Cards", path: "/gift-cards" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ],
@@ -17,26 +16,34 @@ const navLinks = {
     { name: "التصنيفات", path: "/categories" },
     { name: "العروض", path: "/deals" },
     { name: "وصل حديثًا", path: "/new-arrivals" },
-    { name: "بطاقات الهدايا", path: "/gift-cards" },
     { name: "من نحن", path: "/about" },
     { name: "تواصل معنا", path: "/contact" },
   ],
 };
 
-function Nav() {
+function Nav({ openMenu }) {
   const { language } = useLanguage();
   const links = navLinks[language];
 
   return (
-    <nav className="hidden md:block">
-      <ul className="flex gap-5 items-center">
-        {links.map((link) => (
-          <li className="text-text-second font-medium" key={link.name}>
-            <NavLink to={link.path}>{link.name}</NavLink>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <>
+      <nav
+        className={`absolute shadow-sm md:shadow-none left-0 bg-background-main w-full top-20 md:static rounded-lg ${
+          openMenu ? "flex" : "hidden"
+        } justify-center md:flex`}
+      >
+        <ul className="px-4 pt-15 pb-4 md:p-0 md:flex md:gap-5 items-center">
+          {links.map((link) => (
+            <li
+              className="p-2 md:p-0 text-text-second font-medium"
+              key={link.name}
+            >
+              <NavLink to={link.path}>{link.name}</NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
   );
 }
 

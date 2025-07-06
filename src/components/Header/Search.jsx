@@ -24,7 +24,7 @@ function Search() {
       {showSearch && (
         <div
           ref={refSearch}
-          className="absolute left-0 top-20 flex items-center w-full border p-2 rounded-md border-border-color transition-all duration-300 focus-within:shadow-sm dark:focus-within:shadow-lg"
+          className="absolute bg-background-main left-0 top-20 flex items-center w-full border p-2 rounded-md border-border-color transition-all duration-300 focus-within:shadow-sm dark:focus-within:shadow-lg"
         >
           <input
             ref={refInput}

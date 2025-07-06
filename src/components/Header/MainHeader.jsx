@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
-import DarkMode from "../DarkMode";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
+import DarkMode from "../DarkMode";
 import Nav from "./Nav";
 import Search from "./Search";
+import Logo from "./Logo";
+import NavMenu from "./NavMenu";
+import { useState } from "react";
 
 function MainHeader() {
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <div className="py-3 bg-background-second">
-      <div className="container relative bg-background-main px-6 py-4 rounded-full shadow-md flex justify-between items-center">
-        <Link to="/">
-          <h1 className="text-heading text-xl font-semibold">Cartzilla</h1>
-        </Link>
-
-        <Nav />
-
-        <div className="flex items-center gap-4 text-text-second text-lg">
+      <div className="container relative bg-background-main px-5 py-4 rounded-full shadow-md flex justify-between items-center">
+        <NavMenu setOpenMenu={setOpenMenu} />
+        <Logo />
+        <Nav openMenu={openMenu} />
+        <div className="flex items-center gap-4 text-text-second text-xl">
           <DarkMode />
           <Link>
             <HiOutlineShoppingCart />
