@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -13,8 +16,9 @@
   }
 }
 :root {
+  --color-app-background: #ffffff;
   --color-background: #ffffff;
-  --color-second-background: #f5f7fa;
+  --color-background-second: #f5f7fa;
   --color-border: #e0e5eb;
   --color-text-main: #181d25;
   --color-text-second: #333d4c;
@@ -22,11 +26,13 @@
   --color-icon: #333d4c;
   --color-button-background: #222934;
   --color-footer-background: #222934;
+  --color-button-main: #f55266;
   --box-shadow-dark: 0 8px 30px -4px #080b12;
 }
 
 @theme {
-  --font-display: "Cairo", sans-serif;
+  /* --font-display: "Cairo", sans-serif; */
+  --font-display: "Inter", sans-serif;
   --breakpoint-*: initial;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -38,8 +44,9 @@
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
 
   /* MyStyles */
+  --color-app-background: var(--app-background);
   --color-background-main: var(--background);
-  --color-second-background: var(--second-background);
+  --color-background-second: var(--background-second);
   --color-border: var(--border);
   --color-text-main: var(--text-main);
   --color-text-second: var(--text-second);
@@ -47,13 +54,15 @@
   --color-icon: var(--icon);
   --color-button-background: var(--button-background);
   --color-footer-background: var(--footer-background);
+  --color-button-main: var(--button-main);
   --box-shadow: 0 8px 30px -4px #080b12;
   /* ... */
 }
 
 .dark {
+  --color-app-background: #181d25;
   --color-background-main: #222934;
-  --color-second-background: #2d343e;
+  --color-background-second: #2d343e;
   --color-border: #333d4c;
   --color-text-main: #d3d4d6;
   --color-text-second: #e0e5eb;
@@ -62,7 +71,10 @@
   --color-button-background: #ffffff;
   --box-shadow: 0 8px 30px -4px #676f7b;
 }
-
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 body {
   font-family: var(--font-display);
+  background-color: var(--color-app-background);
 }

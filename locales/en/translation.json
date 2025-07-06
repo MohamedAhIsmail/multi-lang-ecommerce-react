@@ -3,5 +3,9 @@
   "wishlist": "Wishlist",
   "account": "Account",
   "contactUs": "Contact us",
-  "sale": "🔥 The Biggest Sale Ever 50% Off"
+  "sale": "🔥 The Biggest Sale Ever 50% Off",
+  "notFound": "Page not found",
+  "notFoundText": "The page you are looking for was moved, removed or might never existed.",
+  "goToHome": "Go to homepage",
+  "from": "From $899"
 }
