@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import DarkMode from "../DarkMode";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
+import Nav from "./Nav";
 
 function MainHeader() {
   return (
@@ -10,12 +11,12 @@ function MainHeader() {
           <h1 className="text-heading text-xl font-semibold">Cartzilla</h1>
         </Link>
 
-        <nav></nav>
+        <Nav />
 
         <div className="flex items-center gap-4 text-text-second text-lg">
           <DarkMode />
           <Link>
-            <HiOutlineShoppingCart className="text-heading" />
+            <HiOutlineShoppingCart />
           </Link>
         </div>
       </div>

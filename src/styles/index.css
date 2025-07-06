@@ -18,7 +18,7 @@
 :root {
   --color-app-background: #ffffff;
   --color-background-main: #ffffff;
-  --color-background-second: #F6F9FC;
+  --color-background-second: #f6f9fc;
   --color-border: #e0e5eb;
   --color-text-main: #181d25;
   --color-text-second: #333d4c;
@@ -39,9 +39,6 @@
   --breakpoint-lg: 922px;
   --breakpoint-xl: 1200px;
   --breakpoint-2xl: 1400px;
-
-  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
-  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
 
   /* MyStyles */
   --color-app-background: var(--app-background);
@@ -71,10 +68,16 @@
   --color-button-background: #ffffff;
   --box-shadow: 0 8px 30px -4px #676f7b;
 }
+
 * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 body {
   font-family: var(--font-display);
   background-color: var(--color-app-background);
+}
+
+.active {
+  color: #f55266;
 }
