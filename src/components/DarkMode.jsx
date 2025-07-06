@@ -1,4 +1,5 @@
-import { HiMiniMoon, HiMiniSun } from "react-icons/hi2";
+import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi2";
+
 import { useDarkMode } from "../context/DarkModeContext";
 
 function DarkMode() {
@@ -11,10 +12,10 @@ function DarkMode() {
 
   return (
     <button
-      className="bg-blue-600 text-white px-4 py-2"
+      className="cursor-pointer"
       onClick={handleDarkMode}
     >
-      {isDarkMode ? <HiMiniSun /> : <HiMiniMoon />}
+      {isDarkMode ? <HiOutlineSun /> : <HiOutlineMoon />}
     </button>
   );
 }

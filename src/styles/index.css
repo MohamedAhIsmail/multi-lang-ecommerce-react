@@ -17,8 +17,8 @@
 }
 :root {
   --color-app-background: #ffffff;
-  --color-background: #ffffff;
-  --color-background-second: #f5f7fa;
+  --color-background-main: #ffffff;
+  --color-background-second: #F6F9FC;
   --color-border: #e0e5eb;
   --color-text-main: #181d25;
   --color-text-second: #333d4c;
@@ -45,7 +45,7 @@
 
   /* MyStyles */
   --color-app-background: var(--app-background);
-  --color-background-main: var(--background);
+  --color-background-main: var(--background-main);
   --color-background-second: var(--background-second);
   --color-border: var(--border);
   --color-text-main: var(--text-main);
