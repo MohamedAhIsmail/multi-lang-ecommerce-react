@@ -1,29 +1,29 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../hooks/useLanguage";
-import NavMenu from "./NavMenu";
+// import NavMenu from "./NavMenu";
 
 const navLinks = {
   en: [
     { name: "Home", path: "/" },
     { name: "Categories", path: "/categories" },
-    { name: "Deals", path: "/deals" },
     { name: "New Arrivals", path: "/new-arrivals" },
-    { name: "About", path: "/about" },
+    { name: "Deals", path: "/deals" },
     { name: "Contact", path: "/contact" },
+    { name: "About", path: "/about" },
   ],
   ar: [
     { name: "الرئيسية", path: "/" },
     { name: "التصنيفات", path: "/categories" },
     { name: "العروض", path: "/deals" },
     { name: "وصل حديثًا", path: "/new-arrivals" },
-    { name: "من نحن", path: "/about" },
     { name: "تواصل معنا", path: "/contact" },
+    { name: "عن الموقع", path: "/about" },
   ],
 };
 
 function Nav({ openMenu }) {
-  const { language } = useLanguage();
-  const links = navLinks[language];
+  const { language = "en" } = useLanguage();
+  const links = navLinks[language] || navLinks["en"]
 
   return (
     <>

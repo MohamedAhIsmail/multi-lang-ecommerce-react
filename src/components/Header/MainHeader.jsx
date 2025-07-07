@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
+import { useState } from "react";
 import DarkMode from "../DarkMode";
 import Nav from "./Nav";
 import Search from "./Search";
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
-import { useState } from "react";
 
 function MainHeader() {
   const [openMenu, setOpenMenu] = useState(false);
