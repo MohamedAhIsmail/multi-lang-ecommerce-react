@@ -17,7 +17,7 @@ function IpadSlide() {
       </div>
 
       <div>
-        <img src={ipad} alt="Ipad" />
+        <img src={ipad} alt="Ipad" className="w-[80%]" />
       </div>
     </div>
   );

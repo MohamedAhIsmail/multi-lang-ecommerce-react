@@ -4,6 +4,9 @@ function Hero() {
   return (
     <section className="bg-background-second">
       <div className="container">
+        <div>
+          
+        </div>
         <Slider />
       </div>
     </section>
