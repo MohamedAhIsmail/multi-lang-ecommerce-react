@@ -26,6 +26,12 @@
   --color-footer-background: #222934;
   --color-button-main: #f55266;
   --box-shadow-dark: 0 8px 30px -4px #080b12;
+  --color-banner-blue: #e8f2fc;
+  --color-banner-orange: #f7f1ed;
+  --color-banner-green: #e4f6f1;
+  --color-text-blue: #69b3fe;
+  --color-text-orange: #69b3fe;
+  --color-text-green: #69b3fe;
 }
 
 @theme {
