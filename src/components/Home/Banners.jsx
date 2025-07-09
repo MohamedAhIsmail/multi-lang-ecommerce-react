@@ -3,21 +3,21 @@ import BannerBox from "./BannerBox";
 const banners = [
   {
     image: "src/assets/cam.webp",
-    text: "Next Gen <b>Video</b> with <b>700 Cam</b>",
     background: "bg-banner-blue",
     btnColor: "text-text-blue",
+    textKey: "banners.0.text",
   },
   {
     image: "src/assets/smart.webp",
-    text: "Top Rated <b>Smart watches</b> are on <b>Sale</b>",
     background: "bg-banner-orange",
     btnColor: "text-text-orange",
+    textKey: "banners.1.text",
   },
   {
     image: "src/assets/earbuds.webp",
-    text: "Catch big <b>Deals</b> on <b>Earbuds</b>",
     background: "bg-banner-green",
     btnColor: "text-text-green",
+    textKey: "banners.2.text",
   },
 ];
 

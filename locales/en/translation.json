@@ -18,5 +18,16 @@
   "explor": "Explore the best",
   "ipadCollection": "Ipad Collection",
   "onTheMarket": "on the market",
-  "shopNow": "Shop Now"
+  "shopNow": "Shop Now",
+  "banners": {
+    "0": {
+      "text": "Next Gen <b>Video</b> with <b>700 Cam</b>"
+    },
+    "1": {
+      "text": "Top Rated <b>Smart watches</b> are on <b>Sale</b>"
+    },
+    "2": {
+      "text": "Catch big <b>Deals</b> on <b>Earbuds</b>"
+    }
+  }
 }
