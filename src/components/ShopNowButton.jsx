@@ -12,7 +12,7 @@ function ShopNowButton() {
       className={`text-white bg-[#F55266] px-3 py-2 md:px-4 md:py-2 rounded-md cursor-pointer hover:bg-[#f55265d4] transition-all duration-300 w-fit flex items-center gap-2 btn-shadow`}
     >
       {t("shopNow")}{" "}
-      {language === "en" ? <HiChevronRight /> : <HiChevronLeft />}
+      <span className="transtion-all duration-600 animate-ping"> {language === "en" ? <HiChevronRight /> : <HiChevronLeft />}</span>
     </button>
   );
 }
