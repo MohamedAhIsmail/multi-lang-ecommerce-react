@@ -11,7 +11,7 @@ function MainHeader() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <div className="bg-background-second pb-8">
+    <div className="bg-background-second">
       <div className="container relative bg-background-main px-5 py-4 rounded-full shadow-md flex justify-between items-center">
         <NavMenu setOpenMenu={setOpenMenu} />
         <Logo />
