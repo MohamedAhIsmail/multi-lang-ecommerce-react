@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/bundle";
 
@@ -15,21 +15,19 @@ function Slider() {
 
   return (
     <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
+      modules={[Pagination, Autoplay]}
       key={language}
       dir={language === "en" ? `ltr` : `rtl`}
       spaceBetween={50}
       slidesPerView={1}
       loop={true}
-      // autoplay={{
-      //   delay: 3000,
-      //   disableOnInteraction: false,
-      // }}
-      // navigation={true}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
       pagination={{ clickable: true }}
       grabCursor
       speed={1000}
-      // centeredSlides
     >
       {slides.map((slide, i) => (
         <SwiperSlide key={i}>{slide}</SwiperSlide>

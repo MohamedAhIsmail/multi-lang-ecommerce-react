@@ -1,18 +1,12 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"); */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
-
-/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"); */
-
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
 @import "tailwindcss";
-
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* @utility btn {
-  @apply bg-amber-800 text-2xl px-5 py-3;
-} */
+@layer utilities {
+  .btn-shadow {
+    box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(254, 105, 106, 0.9);
+  }
+}
 
 @layer components {
   .container {
@@ -35,11 +29,7 @@
 }
 
 @theme {
-  /* --font-display: "Cairo", sans-serif; */
-  /* --font-display: "Inter", sans-serif; */
-  /* --font-display: "IBM Plex Sans Arabic", sans-serif; */
   --font-display: "Rubik", sans-serif;
-
   --breakpoint-*: initial;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -60,7 +50,6 @@
   --color-footer-background: var(--footer-background);
   --color-button-main: var(--button-main);
   --box-shadow: 0 8px 30px -4px #080b12;
-  /* ... */
 }
 
 .dark {
