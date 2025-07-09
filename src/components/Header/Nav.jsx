@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../hooks/useLanguage";
-// import NavMenu from "./NavMenu";
 
 const navLinks = {
   en: [
@@ -23,7 +22,7 @@ const navLinks = {
 
 function Nav({ openMenu }) {
   const { language = "en" } = useLanguage();
-  const links = navLinks[language] || navLinks["en"]
+  const links = navLinks[language] || navLinks["en"];
 
   return (
     <>
@@ -34,10 +33,7 @@ function Nav({ openMenu }) {
       >
         <ul className="px-4 pt-15 pb-4 md:p-0 md:flex md:gap-5 items-center">
           {links.map((link) => (
-            <li
-              className="p-2 md:p-0 text-text-second "
-              key={link.name}
-            >
+            <li className="p-2 md:p-0 text-text-second " key={link.name}>
               <NavLink to={link.path}>{link.name}</NavLink>
             </li>
           ))}
