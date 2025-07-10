@@ -3,10 +3,10 @@ import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi2";
 import { useDarkMode } from "../context/DarkModeContext";
 
 function DarkMode() {
+
   const { isDarkMode, setIsDarkMode } = useDarkMode();
 
   function handleDarkMode() {
-    window.document.documentElement.classList.toggle("dark");
     setIsDarkMode((dark) => !dark);
   }
 
