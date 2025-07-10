@@ -2,6 +2,7 @@ import BannerBox from "./BannerBox";
 
 const banners = [
   {
+    id: 0,
     image: "src/assets/cam.webp",
     background: "bg-banner-blue",
     dark: "dark:bg-banner-dark",
@@ -9,6 +10,7 @@ const banners = [
     textKey: "banners.0.text",
   },
   {
+    id: 1,
     image: "src/assets/smart.webp",
     background: "bg-banner-orange",
     dark: "dark:bg-banner-dark",
@@ -16,6 +18,7 @@ const banners = [
     textKey: "banners.1.text",
   },
   {
+    id: 2,
     image: "src/assets/earbuds.webp",
     background: "bg-banner-green",
     dark: "dark:bg-banner-dark",
@@ -28,7 +31,7 @@ function Banners() {
   return (
     <div className="flex flex-col md:flex-row w-full xl:flex-col justify-center items-center gap-5">
       {banners.map((banner) => (
-        <BannerBox banner={banner} />
+        <BannerBox key={banner.id} banner={banner} />
       ))}
     </div>
   );
