@@ -23,22 +23,21 @@ function ChangeLanguage() {
   }, [lng]);
 
   return (
-    <>
-      {/* <div>
-        <button onClick={() => i18n.changeLanguage("ar")}>AR</button>
-        <button onClick={() => i18n.changeLanguage("en")}>En</button>
-      </div> */}
-
-      {/* <span class="fi fi-gr fis"></span> */}
-
-      <select value={lng} onChange={(e) => i18n.changeLanguage(e.target.value)}>
-        {languages.map(({ name, flag, code }) => (
-          <option value={code} key={code}>
-            {name}
-          </option>
-        ))}
-      </select>
-    </>
+    <select
+      value={lng}
+      onChange={(e) => i18n.changeLanguage(e.target.value)}
+      className="outline-0 cursor-pointer p-2"
+    >
+      {languages.map(({ name, code }) => (
+        <option
+          value={code}
+          key={code}
+          className="bg-background-main cursor-pointer"
+        >
+          {name}
+        </option>
+      ))}
+    </select>
   );
 }
 
