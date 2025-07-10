@@ -219,7 +219,7 @@ body {
   }
 }
 
-/* 
+
 
 @layer base {
   * {
@@ -228,4 +228,4 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-} */
+} 

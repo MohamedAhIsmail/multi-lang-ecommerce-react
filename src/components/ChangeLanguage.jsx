@@ -1,6 +1,13 @@
 import Cookies from "js-cookie";
 import i18n from "i18next";
 import { useEffect } from "react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const languages = [
   {
@@ -23,21 +30,18 @@ function ChangeLanguage() {
   }, [lng]);
 
   return (
-    <select
-      value={lng}
-      onChange={(e) => i18n.changeLanguage(e.target.value)}
-      className="outline-0 cursor-pointer p-2"
-    >
-      {languages.map(({ name, code }) => (
-        <option
-          value={code}
-          key={code}
-          className="bg-background-main cursor-pointer"
-        >
-          {name}
-        </option>
-      ))}
-    </select>
+    <Select value={lng} onValueChange={(val) => i18n.changeLanguage(val)}>
+      <SelectTrigger className="w-[130px] cursor-pointer">
+        <SelectValue placeholder="Language" />
+      </SelectTrigger>
+      <SelectContent className="dark:bg-background-main">
+        {languages.map(({ name, code }) => (
+          <SelectItem key={code} value={code} className="cursor-pointer">
+            {name}
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
   );
 }
 
