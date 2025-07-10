@@ -5,7 +5,7 @@ import ChangeLanguage from "../ChangeLanguage";
 function TopHeader() {
   const { t } = useTranslation();
   return (
-    <div className="bg-background-second text-text-main py-3">
+    <div className="text-text-main py-3">
       <div className="container flex justify-between items-center">
         <ChangeLanguage />
         <p className="hidden md:block">{t("sale")}</p>

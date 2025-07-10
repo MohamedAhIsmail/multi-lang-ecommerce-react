@@ -11,7 +11,7 @@ function MainHeader() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <div className="bg-background-second pb-9">
+    <div className="pb-9">
       <div className="container">
         <div className="relative px-4 bg-background-main py-4 rounded-full shadow-md flex justify-between items-center">
           <NavMenu setOpenMenu={setOpenMenu} />
