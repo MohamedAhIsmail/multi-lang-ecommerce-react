@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @layer utilities {
   .btn-shadow {
     box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(254, 105, 106, 0.9);
@@ -80,6 +81,7 @@
 * {
   /* transition: background-color 0.3s ease; */
 }
+
 
 body {
   font-family: var(--font-display);
