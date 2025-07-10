@@ -26,7 +26,6 @@
   --color-button-background: #222934;
   --color-footer-background: #222934;
   --color-button-main: #f55266;
-  --box-shadow-dark: 0 8px 30px -4px #080b12;
   --color-banner-blue: #e8f2fc;
   --color-banner-orange: #f7f1ed;
   --color-banner-green: #e4f6f1;
@@ -56,9 +55,9 @@
   --color-button-background: var(--button-background);
   --color-footer-background: var(--footer-background);
   --color-button-main: var(--button-main);
-  --box-shadow: 0 8px 30px -4px #080b12;
 
   --color-banner-blue: #e8f2fc;
+  --color-banner-dark: #1f2833;
   --color-banner-orange: #f7f1ed;
   --color-banner-green: #e4f6f1;
   --color-text-blue: #69b3fe;
@@ -76,7 +75,6 @@
   --color-heading: #ffffff;
   --color-icon: #e0e5eb;
   --color-button-background: #ffffff;
-  --box-shadow: 0 8px 30px -4px #676f7b;
 }
 
 * {

@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 
 function BannerBox({ banner }) {
   const { t } = useTranslation();
-  const { background, image, textKey, btnColor } = banner;
+  const { background, image, textKey, btnColor, dark } = banner;
   const { language } = useLanguage();
 
   return (
-    <div className={`${background} rounded-lg p-4 flex items-center w-full`}>
+    <div
+      className={`${background} ${dark} rounded-lg p-4 flex items-center w-full text-heading`}
+    >
       <div>
         <img src={image} alt="" className="w-50" />
       </div>

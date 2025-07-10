@@ -4,18 +4,21 @@ const banners = [
   {
     image: "src/assets/cam.webp",
     background: "bg-banner-blue",
+    dark: "dark:bg-banner-dark",
     btnColor: "text-text-blue",
     textKey: "banners.0.text",
   },
   {
     image: "src/assets/smart.webp",
     background: "bg-banner-orange",
+    dark: "dark:bg-banner-dark",
     btnColor: "text-text-orange",
     textKey: "banners.1.text",
   },
   {
     image: "src/assets/earbuds.webp",
     background: "bg-banner-green",
+    dark: "dark:bg-banner-dark",
     btnColor: "text-text-green",
     textKey: "banners.2.text",
   },
