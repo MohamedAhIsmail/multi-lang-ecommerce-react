@@ -13,7 +13,7 @@ function NotFoundMessage() {
     <section className="pt-20">
       <div className="container">
         <div className="flex justify-center">
-          <img src={isDarkMode ? dark : light} alt="Error Bannar" />
+          <img src={isDarkMode ? dark : light} alt="Error Bannar" className="h-[150px]"/>
         </div>
         <div className="my-8 text-center">
           <h1 className=" text-4xl font-bold text-heading">{t("notFound")}</h1>
