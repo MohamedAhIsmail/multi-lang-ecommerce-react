@@ -10,7 +10,7 @@
 
 @layer components {
   .container {
-    @apply mx-auto px-[15px] w-[90%];
+    @apply mx-auto px-[15px];
   }
 }
 
