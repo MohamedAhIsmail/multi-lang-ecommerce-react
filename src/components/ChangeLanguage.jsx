@@ -1,4 +1,4 @@
-import Cookies from "js-cookie";
+// import Cookies from "js-cookie";
 import i18n from "i18next";
 import { useEffect } from "react";
 import {
@@ -8,6 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const languages = [
   {
@@ -23,7 +24,9 @@ const languages = [
 ];
 
 function ChangeLanguage() {
-  const lng = Cookies.get("i18next") || "en";
+  // const lng = Cookies.get("i18next") || "en";
+    const { language: lng } = useLanguage();
+
 
   useEffect(() => {
     window.document.dir = i18n.dir();
@@ -31,7 +34,7 @@ function ChangeLanguage() {
 
   return (
     <Select value={lng} onValueChange={(val) => i18n.changeLanguage(val)}>
-      <SelectTrigger className="w-[100px] cursor-pointer">
+      <SelectTrigger className="w-[130px] cursor-pointer">
         <SelectValue placeholder="Language">
           {lng === "ar" ? "العربية" : "English"}
         </SelectValue>
