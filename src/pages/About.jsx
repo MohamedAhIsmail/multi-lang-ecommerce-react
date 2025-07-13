@@ -1,14 +1,26 @@
+import Card from "@/components/Card";
 import { useLanguage } from "@/hooks/useLanguage";
-import { getSingleCategory } from "@/services/apiCategories";
-import { useEffect } from "react";
+// import { getSingleCategory } from "@/services/apiCategories";
+import { getProducts } from "@/services/apiProducts";
+import { useEffect, useState } from "react";
 
 function About() {
   const { language } = useLanguage();
+  const [products, setProducts] = useState([]);
+
   useEffect(() => {
-    getSingleCategory("b2mo1ldj60fgifp0787ojk97", language);
+    getProducts(language).then((data) => {
+      setProducts(data);
+    });
   }, [language]);
 
-  return <div>About</div>;
+  return (
+    <div className="flex gap-5">
+      {products.map((product) => (
+        <Card key={product.documentId} product={product}/>
+      ))}
+    </div>
+  );
 }
 
 export default About;

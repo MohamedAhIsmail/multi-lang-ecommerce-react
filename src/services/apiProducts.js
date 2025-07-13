@@ -1,10 +1,14 @@
 import { BASE_URL } from "@/utils/constants";
 import axios from "axios";
 
-export async function getCategories(language = "en") {
+export async function getProducts(language = "en", populate = "*") {
   try {
-    const res = await axios.get(`${BASE_URL}/api/categories?locale=${language}`);
+    const res = await axios.get(
+      `${BASE_URL}/api/products?locale=${language}&populate=${populate}`
+    );
     const { data } = res.data;
+    console.log(data);
+
     return data;
   } catch (error) {
     console.error("Error fetching categories:", error);
@@ -12,10 +16,11 @@ export async function getCategories(language = "en") {
   }
 }
 
-export async function getSingleCategory(id, language = "en", populate = "*") {
+
+export async function getSingleProduct(id, language = "en", populate = "*") {
   try {
     const res = await axios.get(
-      `${BASE_URL}/api/categories/${id}?locale=${language}&populate=${populate}`
+      `${BASE_URL}/api/product/${id}?locale=${language}&populate=${populate}`
     );
     const { data } = res.data;
     console.log(data);
