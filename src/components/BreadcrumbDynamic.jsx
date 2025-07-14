@@ -15,7 +15,7 @@ function BreadcrumbDynamic() {
 
   return (
     <Breadcrumb>
-      <BreadcrumbList>
+      <BreadcrumbList className="pt-3 mb-5">
         {items.map((item, idx) => {
           const isLast = item.isLast;
 
@@ -23,7 +23,9 @@ function BreadcrumbDynamic() {
             <React.Fragment key={idx}>
               <BreadcrumbItem>
                 {isLast ? (
-                  <BreadcrumbPage>{item.name}</BreadcrumbPage>
+                  <BreadcrumbPage className="text-heading">
+                    {item.name}
+                  </BreadcrumbPage>
                 ) : (
                   <BreadcrumbLink asChild>
                     <Link to={item.to}>{item.name}</Link>
