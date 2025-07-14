@@ -20,7 +20,7 @@ export async function getCategoryBySlug(slug, language = "en") {
       `${BASE_URL}/api/categories?filters[slug][$eq]=${slug}&filters[locale][$eq]=${language}&populate=products`
     );
     const { data } = res.data;
-    return data;
+    return data?.[0];
   } catch (error) {
     console.error("Error fetching categories:", error);
     throw error;

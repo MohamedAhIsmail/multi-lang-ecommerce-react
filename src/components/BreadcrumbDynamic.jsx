@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 import { useBreadcrumbItems } from "@/hooks/useBreadcrumbItems";
 import React from "react";
 
-function BreadcrumbDynamic() {
-  const items = useBreadcrumbItems();
+function BreadcrumbDynamic({ customLastName = "" }) {
+  const items = useBreadcrumbItems(customLastName);
 
   return (
     <Breadcrumb>

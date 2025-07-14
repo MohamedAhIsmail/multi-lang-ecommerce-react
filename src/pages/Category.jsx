@@ -4,14 +4,13 @@ import { useParams } from "react-router-dom";
 
 function Category() {
   const { slug } = useParams();
-  const { category } = useCategoryBySlug(slug);
-  console.log(category);
+  const { category, isLoading } = useCategoryBySlug(slug);
 
   return (
     <div>
       <div className="container">
-        <BreadcrumbDynamic />
-        <h1>container</h1>
+        <BreadcrumbDynamic customLastName={category?.name || ""} />
+        <h1>test: {category?.name}</h1>
       </div>
     </div>
   );

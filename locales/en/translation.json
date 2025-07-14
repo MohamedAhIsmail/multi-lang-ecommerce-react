@@ -30,5 +30,12 @@
       "text": "Catch big <b>Deals</b> on <b>Earbuds</b>"
     }
   },
-  "newArrivals": "New arrivals"
+  "newArrivals": "New arrivals",
+  "breadcrumb": {
+    "home": "Home",
+    "categories": "Categories",
+    "products": "Products",
+    "contact": "Contact",
+    "about": "About"
+  }
 }
