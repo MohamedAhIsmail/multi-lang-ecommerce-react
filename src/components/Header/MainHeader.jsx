@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import Search from "./Search";
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
+import { Badge } from "../ui/badge";
 
 function MainHeader() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -17,10 +18,16 @@ function MainHeader() {
           <NavMenu setOpenMenu={setOpenMenu} />
           <Logo />
           <Nav openMenu={openMenu} />
-          <div className="flex items-center gap-4 text-text-second text-xl">
+          <div className="flex items-center gap-4 text-text-second text-2xl">
             <DarkMode />
-            <Link>
+            <Link className="relative">
               <HiOutlineShoppingCart />
+              <Badge
+                
+                className="bg-button-main absolute -top-2 -right-2 w-5 h-5 text-white"
+              >
+                0
+              </Badge>
             </Link>
             <Search />
           </div>

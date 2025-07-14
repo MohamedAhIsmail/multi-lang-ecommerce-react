@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ChangeLanguage from "../ChangeLanguage";
 import { HiOutlineUser } from "react-icons/hi2";
 import { HiOutlineHeart } from "react-icons/hi2";
+import { Badge } from "../ui/badge";
 
 function TopHeader() {
   // const { t } = useTranslation();
@@ -14,8 +15,9 @@ function TopHeader() {
         <div className="flex items-center gap-3 text-2xl">
           <Link to="/" className="relative">
             <HiOutlineHeart />
-            <span className="absolute p-2 bg-button-main rounded-full flex items-center justify-center w-4 h-4 text-sm -right-1 -top-1">0</span>
-            
+            <Badge className="bg-button-main absolute -top-2 -right-3 w-5 h-5 ">
+              0
+            </Badge>
           </Link>
           <Link to="/" className="flex items-center gap-1">
             <HiOutlineUser />
