@@ -5,6 +5,8 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Notfound from "./pages/Notfound";
 import Home from "./pages/Home";
+import Categories from "./pages/Categories";
+import Category from "./pages/Category";
 
 const routes = createBrowserRouter([
   {
@@ -13,6 +15,14 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/categories",
+        element: <Categories />,
+      },
+      {
+        path: "/categories/:slug",
+        element: <Category />,
       },
       {
         path: "/contact",

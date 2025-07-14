@@ -14,15 +14,28 @@ export async function getCategories(language = "en") {
   }
 }
 
-export async function getSingleCategory(id, language = "en", populate = "*") {
+export async function getCategoryBySlug(slug, language = "en") {
   try {
     const res = await axios.get(
-      `${BASE_URL}/api/categories/${id}?locale=${language}&populate=${populate}`
+      `${BASE_URL}/api/categories?filters[slug][$eq]=${slug}&filters[locale][$eq]=${language}&populate=products`
     );
     const { data } = res.data;
     return data;
   } catch (error) {
-    console.error("Error fetching category:", error);
+    console.error("Error fetching categories:", error);
     throw error;
   }
 }
+
+// export async function getSingleCategory(id, language = "en", populate = "*") {
+//   try {
+//     const res = await axios.get(
+//       `${BASE_URL}/api/categories/${id}?locale=${language}&populate=${populate}`
+//     );
+//     const { data } = res.data;
+//     return data;
+//   } catch (error) {
+//     console.error("Error fetching category:", error);
+//     throw error;
+//   }
+// }

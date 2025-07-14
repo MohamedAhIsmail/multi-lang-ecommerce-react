@@ -15,7 +15,7 @@ function TopHeader() {
         <div className="flex items-center gap-3 text-2xl">
           <Link to="/" className="relative">
             <HiOutlineHeart />
-            <Badge className="bg-button-main absolute -top-2 -right-3 w-5 h-5 ">
+            <Badge className="bg-button-main absolute -top-2 -right-2 w-5 h-5 text-white">
               0
             </Badge>
           </Link>
