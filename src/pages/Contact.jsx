@@ -1,30 +1,29 @@
-import { useLanguage } from "@/hooks/useLanguage";
-import { useEffect, useState } from "react";
+import { useCategories } from "@/hooks/useCategories";
 
 function Contact() {
-  const [categories, setCategories] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const { language } = useLanguage() || "en";
-  console.log("lang is:", language);
+  // const [categories, setCategories] = useState([]);
+  // const [isLoading, setIsLoading] = useState(false);
+
+  const { categories, isLoading } = useCategories();
 
   // getCategories();
 
-  useEffect(() => {
-    async function getCategories() {
-      setIsLoading(true);
-      const res = await fetch(
-        `http://localhost:1337/api/categories?locale=${language}`
-      );
-      const { data } = await res.json();
-      setCategories(data);
-      setIsLoading(false);
-      console.log(data);
-    }
-    getCategories();
-  }, [language]);
+  // useEffect(() => {
+  //   async function getCategories() {
+  //     setIsLoading(true);
+  //     const res = await fetch(
+  //       `http://localhost:1337/api/categories?locale=${language}`
+  //     );
+  //     const { data } = await res.json();
+  //     setCategories(data);
+  //     setIsLoading(false);
+  //     console.log(data);
+  //   }
+  //   getCategories();
+  // }, [language]);
 
   if (isLoading) return <p>Loading...</p>;
-
+  console.log(categories);
   return (
     <div>
       {categories.map((cat) => (
