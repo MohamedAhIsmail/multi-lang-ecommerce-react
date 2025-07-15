@@ -7,12 +7,12 @@ function SearchCategories() {
   const { searchTerm, setSearchTerm } = useCategoriesStore();
 
   return (
-    <div className="text-gray-500 flex items-center gap-2 border-1 p-2 rounded-md w-full sm:w-auto">
+    <div className="text-gray-500 flex items-center gap-2 border-1 p-2 rounded-md w-full sm:w-auto dark:text-white  dark:bg-[#22272d]">
       <HiMagnifyingGlass className="text-xl" />
       <input
         type="text"
         placeholder={t("searchCategories")}
-        className="outline-0"
+        className="outline-0 placeholder:dark:text-white"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />

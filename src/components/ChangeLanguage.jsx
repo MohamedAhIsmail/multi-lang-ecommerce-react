@@ -34,10 +34,8 @@ function ChangeLanguage() {
 
   return (
     <Select value={lng} onValueChange={(val) => i18n.changeLanguage(val)}>
-      <SelectTrigger className="w-[130px] cursor-pointer">
-        <SelectValue placeholder="Language">
-          {lng === "ar" ? "العربية" : "English"}
-        </SelectValue>
+      <SelectTrigger className="w-fit cursor-pointer">
+        <SelectValue placeholder="Language" />
       </SelectTrigger>
       <SelectContent className="dark:bg-background-main">
         {languages.map(({ name, code }) => (

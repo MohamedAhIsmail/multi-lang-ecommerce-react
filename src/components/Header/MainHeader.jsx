@@ -14,7 +14,7 @@ function MainHeader() {
   return (
     <div className="pb-9">
       <div className="container">
-        <div className="relative px-4 bg-background-main py-4 rounded-full shadow-md flex justify-between items-center">
+        <div className="relative px-4 bg-background-main py-4 rounded-full shadow border flex justify-between items-center">
           <NavMenu setOpenMenu={setOpenMenu} />
           <Logo />
           <Nav openMenu={openMenu} />
