@@ -7,6 +7,7 @@ import Notfound from "./pages/Notfound";
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
+import ProductDetails from "./pages/ProductDetails";
 
 const routes = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const routes = createBrowserRouter([
       {
         path: "/categories/:slug",
         element: <Category />,
+      },
+      {
+        path: "products/:slug",
+        element: <ProductDetails />,
       },
       {
         path: "/contact",

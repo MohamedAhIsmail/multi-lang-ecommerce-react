@@ -46,5 +46,6 @@
     "low-high": "Products Number (Low - High)"
   },
   "notFoundSearch": "No results found.",
-  "notFoundSearchMessage": "Try adjusting your search or filter to find what you're looking for."
+  "notFoundSearchMessage": "Try adjusting your search or filter to find what you're looking for.",
+  "currency": "EGP"
 }

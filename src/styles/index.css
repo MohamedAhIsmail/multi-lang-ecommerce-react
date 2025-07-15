@@ -10,12 +10,6 @@
   }
 }
 
-@layer utilities {
-  .header-shadow {
-    box-shadow: 0 4px 20px -12px #676F7B;
-  }
-}
-
 @layer components {
   .container {
     @apply mx-auto px-[15px];

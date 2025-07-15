@@ -27,7 +27,7 @@ function CategoryCard({ category }) {
   return (
     <Link
       to={`/categories/${category.slug}`}
-      className="flex items-center justify-center bg-background-main p-4 rounded shadow hover:shadow-md text-heading border-1"
+      className="flex items-center justify-center bg-background-main p-4 rounded shadow hover:shadow-md text-heading border-1 transition-shadow duration-150"
     >
       <div className="flex flex-col gap-5 items-center">
         {getCategoryIcon(category.slug)}

@@ -16,11 +16,10 @@ export async function getProducts(language = "en", populate = "*") {
   }
 }
 
-
-export async function getSingleProduct(id, language = "en", populate = "*") {
+export async function getSingleProduct(slug, language = "en") {
   try {
     const res = await axios.get(
-      `${BASE_URL}/api/product/${id}?locale=${language}&populate=${populate}`
+      `${BASE_URL}/api/products?filters[slug][$eq]=${slug}&filters[locale][$eq]=${language}&populate=*`
     );
     const { data } = res.data;
     console.log(data);
