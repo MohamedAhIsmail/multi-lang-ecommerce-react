@@ -37,5 +37,6 @@
     "products": "Products",
     "contact": "Contact",
     "about": "About"
-  }
+  },
+  "searchCategories" : "Search Categories..."
 }
