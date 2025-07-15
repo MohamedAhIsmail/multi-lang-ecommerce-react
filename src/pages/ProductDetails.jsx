@@ -13,7 +13,7 @@ function ProductDetails() {
   return (
     <section>
       <div className="container">
-        <BreadcrumbDynamic />
+        <BreadcrumbDynamic customLastName={product?.title} />
       </div>
     </section>
   );
