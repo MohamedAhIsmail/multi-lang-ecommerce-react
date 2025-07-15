@@ -38,5 +38,13 @@
     "contact": "Contact",
     "about": "About"
   },
-  "searchCategories" : "Search Categories..."
+  "searchCategories": "Search Categories...",
+  "categoriesSort": {
+    "a-z": "Sort by name: (A-Z)",
+    "z-a": "Sort by name: (Z-A)",
+    "high-low": "Products Number (High - Low)",
+    "low-high": "Products Number (Low - High)"
+  },
+  "notFoundSearch": "No results found.",
+  "notFoundSearchMessage": "Try adjusting your search or filter to find what you're looking for."
 }

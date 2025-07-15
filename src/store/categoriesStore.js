@@ -2,7 +2,9 @@ import { create } from "zustand";
 
 const useCategoriesStore = create((set) => ({
   searchTerm: "",
-  setSearchTerm: (value) => set({ searchTerm: value }),
+  sortType: "a-z",
+  setSearchTerm: (term) => set({ searchTerm: term }),
+  setSortType: (type) => set({ sortType: type }),
 }));
 
 export default useCategoriesStore;
