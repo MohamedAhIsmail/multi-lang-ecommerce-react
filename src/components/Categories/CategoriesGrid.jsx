@@ -13,7 +13,7 @@ function CategoriesGrid() {
 
   const filteredCategories = filterAndSort(categories, searchTerm, sortType);
 
-  if (filteredCategories.length === 0) return <NoResultsMessage />
+  if (filteredCategories.length === 0) return <NoResultsMessage />;
 
   return (
     <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
