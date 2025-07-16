@@ -1,4 +1,4 @@
-export function filterAndSort(array, searchTerm, sortType) {
+export function filterAndSort(array = [], searchTerm, sortType) {
   let result = [...array];
 
   // search filter
