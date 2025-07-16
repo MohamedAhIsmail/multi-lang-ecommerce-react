@@ -29,7 +29,7 @@ const banners = [
 
 function Banners() {
   return (
-    <div className="flex flex-col md:flex-row w-full xl:flex-col justify-center items-center gap-5">
+    <div className="flex flex-col md:flex-row w-full xl:flex-col justify-center items-center gap-5 xl:h-[500px]">
       {banners.map((banner) => (
         <BannerBox key={banner.id} banner={banner} />
       ))}

@@ -6,7 +6,7 @@ function HeadphoneSlide() {
   const { t } = useTranslation();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center p-2 md:p-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center p-8 rounded-lg">
       <div className="text-heading flex justify-center">
         <div className="flex flex-col items-center md:items-start">
           <p className="text-2xl md:text-4xl font-light mb-4">
@@ -21,7 +21,7 @@ function HeadphoneSlide() {
       </div>
 
       <div className="flex justify-center items-center">
-        <img src={headphone} alt="HeadpPhone" className="w-[80%]" />
+        <img src={headphone} alt="HeadpPhone" />
       </div>
     </div>
   );

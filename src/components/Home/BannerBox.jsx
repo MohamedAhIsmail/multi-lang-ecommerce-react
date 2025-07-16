@@ -11,7 +11,7 @@ function BannerBox({ banner }) {
 
   return (
     <div
-      className={`${background} ${dark} rounded-lg p-4 flex items-center w-full text-heading`}
+      className={`${background} ${dark} rounded-lg p-4 flex items-center w-full text-heading flex-1`}
     >
       <div>
         <img src={image} alt="" className="w-50" />
