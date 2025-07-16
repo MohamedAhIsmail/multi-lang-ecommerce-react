@@ -12,8 +12,9 @@ function SmallProductCard({ product }) {
       <img src={fullImageUrl} alt={title} className="w-24" />
       <div className="flex flex-col gap-2">
         <StarRating rating={rating} size={16} color="#FC9231" />
-        <h2 className="group-hover:underline transition-all duration-500">
+        <h2 className="relative">
           {title}
+          <span className="h-[2px] w-0 bg-slate-800 dark:bg-white absolute -bottom-0 left-0 group-hover:w-full duration-300 rounded-full transition-all"></span>
         </h2>
         <p>{formatPrice(price)}</p>
       </div>

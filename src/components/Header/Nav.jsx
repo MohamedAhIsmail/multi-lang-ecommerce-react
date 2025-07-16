@@ -1,22 +1,27 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../hooks/useLanguage";
+import {
+  HiOutlineHome,
+  HiOutlineTag,
+  HiOutlinePhone,
+  HiOutlineLightBulb,
+} from "react-icons/hi";
+import { AiOutlineProduct } from "react-icons/ai";
 
 const navLinks = {
   en: [
-    { name: "Home", path: "/" },
-    { name: "Categories", path: "/categories" },
-    { name: "New Arrivals", path: "/new-arrivals" },
-    { name: "Deals", path: "/deals" },
-    { name: "Contact", path: "/contact" },
-    { name: "About", path: "/about" },
+    { name: "Home", path: "/", icon: <HiOutlineHome /> },
+    { name: "Categories", path: "/categories", icon: <HiOutlineTag /> },
+    { name: "New Arrivals", path: "/new-arrivals", icon: <AiOutlineProduct /> },
+    { name: "About", path: "/about", icon: <HiOutlineLightBulb /> },
+    { name: "Contact", path: "/contact", icon: <HiOutlinePhone /> },
   ],
   ar: [
-    { name: "الرئيسية", path: "/" },
-    { name: "التصنيفات", path: "/categories" },
-    { name: "العروض", path: "/deals" },
-    { name: "وصل حديثًا", path: "/new-arrivals" },
-    { name: "تواصل معنا", path: "/contact" },
-    { name: "عن الموقع", path: "/about" },
+    { name: "الرئيسية", path: "/", icon: <HiOutlineHome /> },
+    { name: "التصنيفات", path: "/categories", icon: <HiOutlineTag /> },
+    { name: "وصل حديثًا", path: "/new-arrivals", icon: <AiOutlineProduct /> },
+    { name: "عن الموقع", path: "/about", icon: <HiOutlineLightBulb /> },
+    { name: "تواصل معنا", path: "/contact", icon: <HiOutlinePhone /> },
   ],
 };
 
@@ -33,8 +38,15 @@ function Nav({ openMenu }) {
       >
         <ul className="px-4 pt-15 pb-4 md:p-0 md:flex md:gap-5 items-center">
           {links.map((link) => (
-            <li className="p-2 md:p-0 text-text-second" key={link.name}>
-              <NavLink to={link.path}>{link.name}</NavLink>
+            <li
+              className="p-2 md:p-0 text-text-second relative group"
+              key={link.name}
+            >
+              <NavLink to={link.path} className="flex items-center gap-2">
+                <span className="text-xl">{link.icon}</span>
+                {link.name}
+              </NavLink>
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 dark:bg-white bg-slate-600 rounded-full group-hover:w-full duration-300 transition-all"></span>
             </li>
           ))}
         </ul>

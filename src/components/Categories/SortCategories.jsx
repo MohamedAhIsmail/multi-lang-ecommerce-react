@@ -39,7 +39,11 @@ function SortCategories() {
         </SelectTrigger>
         <SelectContent className="dark:bg-background-main">
           {sortOptions.map((opt) => (
-            <SelectItem className="cursor-pointer" value={opt.val}>
+            <SelectItem
+              className="cursor-pointer"
+              key={opt.val}
+              value={opt.val}
+            >
               {t(opt.name)}
             </SelectItem>
           ))}
