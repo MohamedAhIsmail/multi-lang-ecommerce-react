@@ -1,10 +1,9 @@
 import { useProducts } from "@/hooks/useProducts";
 import SmallProductCard from "./SmallProductCard";
 import NewArrivalsLoading from "../Skeleton/NewArrivalsLoading";
-import CatsLoading from "../Skeleton/CatsLoading";
 
 function NewProductsGrid() {
-  const { products, isLoading } = useProducts();
+  const { products, isLoading } = useProducts();  
 
   if (isLoading) return <NewArrivalsLoading />;
 

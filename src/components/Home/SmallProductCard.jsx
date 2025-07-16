@@ -11,7 +11,7 @@ function SmallProductCard({ product }) {
     <Link to={`/products/${slug}`} className="flex gap-4 items-center group">
       <img src={fullImageUrl} alt={title} className="w-24" />
       <div className="flex flex-col gap-2">
-        <StarRating rating={rating} size={20} color="#FC9231" />
+        <StarRating rating={rating} size={16} color="#FC9231" />
         <h2 className="group-hover:underline transition-all duration-500">
           {title}
         </h2>

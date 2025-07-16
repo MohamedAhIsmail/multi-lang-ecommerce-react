@@ -47,5 +47,15 @@
   },
   "notFoundSearch": "لم يتم العثور على نتائج.",
   "notFoundSearchMessage": "جرّب تعديل البحث أو الفلاتر للعثور على ما تريده.",
-  "currency": "جنيه"
+  "currency": "جنيه",
+  "siteFeatures": {
+    "shipping": "شحن وإرجاع مجاني",
+    "shippingText": "لكل الطلبات التي تتجاوز 1000 جنيه",
+    "payment": "دفع آمن",
+    "paymentText": "نضمن لك عملية دفع آمنة",
+    "moneyBack": "ضمان استرجاع الأموال",
+    "moneyBackText": "استرجاع الأموال خلال 30 يومًا",
+    "support": "دعم عملاء 24/7",
+    "supportText": "دعم عملاء ودود على مدار الساعة"
+  }
 }

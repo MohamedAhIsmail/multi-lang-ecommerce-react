@@ -47,5 +47,15 @@
   },
   "notFoundSearch": "No results found.",
   "notFoundSearchMessage": "Try adjusting your search or filter to find what you're looking for.",
-  "currency": "EGP"
+  "currency": "EGP",
+  "siteFeatures": {
+    "shipping": "Free Shipping & Returns",
+    "shippingText": "For all orders over EGP 1000",
+    "payment": "Secure Payment",
+    "paymentText": "We ensure secure payment",
+    "moneyBack": "Money Back Guarantee",
+    "moneyBackText": "Returning money 30 days",
+    "support": "24/7 Customer Support",
+    "supportText": "Friendly customer support"
+  }
 }
