@@ -30,7 +30,7 @@ function Search() {
             ref={refInput}
             type="text"
             placeholder={t("search")}
-            className="px-2 w-full outline-0 placeholder:text-text-second placeholder:text-sm transition-all duration-300"
+            className="px-2 w-full text-lg outline-0 placeholder:text-text-second placeholder:text-sm transition-all duration-300"
           />
           <HiMiniMagnifyingGlass />
         </div>

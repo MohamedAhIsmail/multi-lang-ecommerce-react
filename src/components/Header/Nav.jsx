@@ -32,14 +32,14 @@ function Nav({ openMenu }) {
   return (
     <>
       <nav
-        className={`absolute shadow-sm md:shadow-none left-0 bg-background-main w-full top-20 md:static rounded-lg ${
+        className={`absolute shadow-sm lg:shadow-none left-0 bg-background-main w-full top-20 lg:static rounded-lg ${
           openMenu ? "flex" : "hidden"
-        } justify-center md:flex`}
+        } justify-center lg:flex`}
       >
-        <ul className="px-4 pt-15 pb-4 md:p-0 md:flex md:gap-5 items-center">
+        <ul className="px-4 pt-15 pb-4 lg:p-0 lg:flex lg:gap-5 items-center">
           {links.map((link) => (
             <li
-              className="p-2 md:p-0 text-text-second relative group"
+              className="p-2 lg:p-0 text-text-second relative group"
               key={link.name}
             >
               <NavLink to={link.path} className="flex items-center gap-2">
