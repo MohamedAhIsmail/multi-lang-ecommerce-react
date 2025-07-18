@@ -12,14 +12,14 @@ const navLinks = {
   en: [
     { name: "Home", path: "/", icon: <HiOutlineHome /> },
     { name: "Categories", path: "/categories", icon: <HiOutlineTag /> },
-    { name: "New Arrivals", path: "/new-arrivals", icon: <AiOutlineProduct /> },
+    { name: "New Arrivals", path: "/products", icon: <AiOutlineProduct /> },
     { name: "About", path: "/about", icon: <HiOutlineLightBulb /> },
     { name: "Contact", path: "/contact", icon: <HiOutlinePhone /> },
   ],
   ar: [
     { name: "الرئيسية", path: "/", icon: <HiOutlineHome /> },
     { name: "التصنيفات", path: "/categories", icon: <HiOutlineTag /> },
-    { name: "وصل حديثًا", path: "/new-arrivals", icon: <AiOutlineProduct /> },
+    { name: "وصل حديثًا", path: "/new-products", icon: <AiOutlineProduct /> },
     { name: "عن الموقع", path: "/about", icon: <HiOutlineLightBulb /> },
     { name: "تواصل معنا", path: "/contact", icon: <HiOutlinePhone /> },
   ],

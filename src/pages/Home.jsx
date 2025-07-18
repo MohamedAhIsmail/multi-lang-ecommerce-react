@@ -1,6 +1,7 @@
 import NewProducts from "@/components/Home/NewProducts";
 import Hero from "@/components/Home/Hero";
 import Features from "@/components/Home/Features";
+import TrendingProducts from "@/components/Home/TrendingProducts";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Hero />
       <Features />
       <NewProducts />
+      <TrendingProducts />
     </>
   );
 }
