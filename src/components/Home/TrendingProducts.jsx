@@ -2,7 +2,6 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { useProducts } from "@/hooks/useProducts";
 import { useTranslation } from "react-i18next";
 import { HiMiniChevronRight, HiMiniChevronLeft } from "react-icons/hi2";
-
 import { Link } from "react-router-dom";
 import ProductCard from "../ProductCard";
 
@@ -26,7 +25,7 @@ function TrendingProducts() {
             to="/products"
             className="px-3 py-2 bg-background-second rounded-full flex items-center"
           >
-            {t("viewAll")}{" "}
+            {t("viewAll")}
             {language === "en" ? (
               <HiMiniChevronRight size={22} />
             ) : (
