@@ -4,13 +4,14 @@ import { useTranslation } from "react-i18next";
 import { HiMiniChevronRight, HiMiniChevronLeft } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import ProductCard from "../ProductCard";
+import TrendingProductsLoading from "../Skeleton/ProductsLoading";
 
 function TrendingProducts() {
   const { t } = useTranslation();
   const { language } = useLanguage();
   const { products, isLoading } = useProducts();
 
-  if (isLoading) return <p>Loading</p>;
+  if (isLoading) return <TrendingProductsLoading />;
 
   const trendingProducts = products.slice(0, 10);
 
@@ -36,7 +37,7 @@ function TrendingProducts() {
 
         <div className="mt-8 grid gap-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {trendingProducts.map((product) => (
-            <ProductCard product={product} />
+            <ProductCard product={product} key={product.id} />
           ))}
         </div>
       </div>
