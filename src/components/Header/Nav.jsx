@@ -19,7 +19,7 @@ const navLinks = {
   ar: [
     { name: "الرئيسية", path: "/", icon: <HiOutlineHome /> },
     { name: "التصنيفات", path: "/categories", icon: <HiOutlineTag /> },
-    { name: "وصل حديثًا", path: "/new-products", icon: <AiOutlineProduct /> },
+    { name: "وصل حديثًا", path: "/products", icon: <AiOutlineProduct /> },
     { name: "عن الموقع", path: "/about", icon: <HiOutlineLightBulb /> },
     { name: "تواصل معنا", path: "/contact", icon: <HiOutlinePhone /> },
   ],

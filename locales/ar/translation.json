@@ -59,5 +59,9 @@
     "supportText": "دعم عملاء ودود على مدار الساعة"
   },
   "trendingProducts": "الأكثر طلباً",
-  "viewAll": "عرض الكل"
+  "viewAll": "عرض الكل",
+  "backButton": {
+    "backTo": "العودة إلي",
+    "products": "المنتجات"
+  }
 }

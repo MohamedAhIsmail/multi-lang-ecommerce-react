@@ -59,5 +59,9 @@
     "supportText": "Friendly customer support"
   },
   "trendingProducts": "Trending products",
-  "viewAll": "View all"
+  "viewAll": "View all",
+  "backButton": {
+    "backTo": "Back to",
+    "products": "Products"
+  }
 }
