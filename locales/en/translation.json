@@ -63,5 +63,6 @@
   "backButton": {
     "backTo": "Back to",
     "products": "Products"
-  }
+  },
+  "scrollTo": "TOP"
 }
