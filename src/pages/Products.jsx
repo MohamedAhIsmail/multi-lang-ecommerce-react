@@ -1,5 +1,17 @@
+import BreadcrumbDynamic from "@/components/BreadcrumbDynamic";
+import ProductsActions from "@/components/Products/ProductsActions";
+import ProductsGrid from "@/components/Products/ProductsGrid";
+
 function Products() {
-  return <div><p>ddddddddddd</p></div>;
+  return (
+    <section>
+      <div className="container">
+        <BreadcrumbDynamic />
+        <ProductsActions />
+        <ProductsGrid />
+      </div>
+    </section>
+  );
 }
 
 export default Products;

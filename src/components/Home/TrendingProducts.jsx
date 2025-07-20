@@ -4,14 +4,14 @@ import { useTranslation } from "react-i18next";
 import { HiMiniChevronRight, HiMiniChevronLeft } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import ProductCard from "../ProductCard";
-import TrendingProductsLoading from "../Skeleton/ProductsLoading";
+import ProductsLoading from "../Skeleton/ProductsLoading";
 
 function TrendingProducts() {
   const { t } = useTranslation();
   const { language } = useLanguage();
   const { products, isLoading } = useProducts();
 
-  if (isLoading) return <TrendingProductsLoading />;
+  if (isLoading) return <ProductsLoading />;
 
   const trendingProducts = products.slice(0, 10);
 
